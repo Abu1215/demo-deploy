@@ -20,4 +20,8 @@ pipeline {
               }
          }
      }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 044021c (changes in phone number in index.html and jenkinsfile)
