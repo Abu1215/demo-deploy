@@ -12,7 +12,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 // Checkout your source code from GitHub
-                checkout scm
+                git 'https://github.com/Abu1215/demo-deploy.git'
             }
         }
 
