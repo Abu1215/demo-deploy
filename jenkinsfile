@@ -12,7 +12,7 @@ pipeline {
          }      
          stage('Upload to AWS') {
               steps {
-                  withAWS(region:'us-southeast-2',credentials:'Jenkins-cred') {
+                  withAWS(region:'ap-southeast-2',credentials:'Jenkins-cred') {
                   sh 'echo "Uploading content with AWS creds"'
                       s3Upload(pathStyleAccessEnabled: true, payloadSigningEnabled: true, file:'index.html', bucket:'mycloudines')
                      
@@ -20,8 +20,4 @@ pipeline {
               }
          }
      }
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 044021c (changes in phone number in index.html and jenkinsfile)
