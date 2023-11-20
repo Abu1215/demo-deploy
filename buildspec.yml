@@ -16,5 +16,4 @@ post_build:
 
 artifacts:
   files:
-    - /var/www/html/index.html
-    
+    - '**/*'
