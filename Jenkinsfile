@@ -16,13 +16,13 @@ pipeline {
             }
         }
 
-        stage('Build') {
-            steps {
-                // Assuming your website is a Node.js app, install dependencies and build
-                sh 'npm install'
-                sh 'npm run build'
-            }
-        }
+        // stage('Build') {
+        //     steps {
+        //         // Assuming your website is a Node.js app, install dependencies and build
+        //         sh 'npm install'
+        //         sh 'npm run build'
+        //     }
+        // }
 
         stage('Upload to S3') {
             steps {
