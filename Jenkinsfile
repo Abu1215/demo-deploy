@@ -21,7 +21,8 @@ stages {
         steps {
             script {
                 // withCredentials([[$class: 'AmazonWebServicesCredentialsBinding', credentialsId: 'healthcare.pem', accessKeyVariable: 'AKIAZTVI7FEFXXESGEOH', secretKeyVariable: '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']]) {
-                    sh 'aws s3 ls'
+                sh 'Working with S3'
+                sh 'aws s3 ls'
                 }
             }
         }
