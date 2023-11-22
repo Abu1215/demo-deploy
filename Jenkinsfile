@@ -17,11 +17,6 @@ pipeline {
             }
         }
 
-        stage('Build') {
-            steps {
-                // Add build commands here
-            }
-        }
 
         stage('Deploy to AWS S3') {
             steps {
