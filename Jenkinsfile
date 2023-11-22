@@ -4,7 +4,7 @@ agent any
 environment {
     AWS_ACCESS_KEY_ID     = credentials('AKIAZTVI7FEFXXESGEOH')
     AWS_SECRET_ACCESS_KEY = credentials('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')
-    SSH_KEY               = credentials('healthcare.pem')
+    //SSH_KEY               = credentials('healthcare.pem')
 }
 
 stages {
