@@ -20,16 +20,9 @@ pipeline {
 
         stage('Deploy to AWS S3') {
             steps {
-                sh 'aws s3 cp . s3://mycloudines/demo-app/'
+                //sh 'aws s3 cp . s3://mycloudines/demo-app/'
+                sh "aws s3 ls"
             }
-        }
-
-        stage('Deploy to EC2') {
-            steps {
-                sshagent(['healthcare.pem']) {
-                    sh 'scp -r -i healthcare.pem . ubuntu@ec2-13-211-6-25.ap-southeast-2.compute.amazonaws.com:/home/abu/AWS_DevOps/'
-                }
-            }
-        }
+        } 
     }
 }
