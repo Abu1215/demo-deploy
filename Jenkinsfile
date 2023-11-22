@@ -17,6 +17,7 @@ stages {
                 sh 'echo "Working with S3"'
                 sh 'aws --version'
                 sh 'aws s3 ls'
+                sh 'pwd'
                 }
             }
         }
