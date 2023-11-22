@@ -19,7 +19,7 @@
         stage('Deploy to EC2') {
             steps {
                 script {
-                    sh 'ssh -i ${'AAAAB3NzaC1yc2EAAAADAQABAAABAQDDMXwsfu7NF3OBMfUO'} ubuntu@ec2-13-211-6-25.ap-southeast-2.compute.amazonaws.com "aws s3 cp --recursive /home/abu/AWS_DevOps s3://mycloudines/demo-app/"'
+                    sh "ssh -i 'healthcare.pem' ubuntu@ec2-13-211-6-25.ap-southeast-2.compute.amazonaws.com 'aws s3 cp --recursive /home/abu/AWS_DevOps s3://mycloudines/demo-app/'"
                 }
             }
         } 
