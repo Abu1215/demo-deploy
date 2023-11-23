@@ -8,8 +8,6 @@ stages {
             }
         }
     }
-
-
     stage('Upload to S3') {
         steps {
             script {
