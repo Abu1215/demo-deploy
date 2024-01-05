@@ -7,9 +7,9 @@ stages {
             script {
                 sh 'echo "Working with S3"'
                 sh 'aws --version'
-                sh 'aws s3 ls'
+                // sh 'aws s3 ls'
                 sh 'pwd'
-                sh 'aws s3 cp . s3://mycloudines/ --recursive --acl public-read'
+                // sh 'aws s3 cp . s3://mycloudines/ --recursive --acl public-read'
                 }
             }
         }
