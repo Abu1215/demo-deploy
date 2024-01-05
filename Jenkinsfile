@@ -7,7 +7,7 @@ stages {
             script {
                 sh 'echo "Working with S3"'
                 sh 'aws --version'
-                // sh 'aws s3 ls'
+                sh 'aws s3 ls'
                 // sh aws configure list
                 // sh aws sts get-caller-identity
                 // sh 'pwd'
