@@ -17,7 +17,7 @@ stages {
                 sh 'aws --version'
                 sh 'aws s3 ls'
                 sh 'pwd'
-                sh 'aws s3 cp . s3://mycloudines/ --recursive --acl public-read'
+                // sh 'aws s3 cp . s3://mycloudines/ --recursive --acl public-read'
                 }
             }
         }
