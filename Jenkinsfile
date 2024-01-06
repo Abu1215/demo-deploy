@@ -3,7 +3,7 @@ pipeline {
 
     stages {
         // Uncomment the stage you need, and add more stages if necessary
-        /*
+    
         stage('Checkout') {
             steps {
                 script {
@@ -11,7 +11,7 @@ pipeline {
                 }
             }
         }
-        */
+        
 
         stage('Upload to S3') {
             steps {
