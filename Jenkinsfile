@@ -3,14 +3,14 @@ pipeline {
 
     stages {
     
-        stage('Checkout') {
+      /*  stage('Checkout') {
             steps {
                 script {
                     git 'https://github.com/Abu1215/demo-deploy.git'
                 }
             }
         }
-        
+        */
 
         stage('Upload to S3') {
             steps {
