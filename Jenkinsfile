@@ -19,8 +19,8 @@ pipeline {
                 script {
                     sh 'echo "Working with S3"'
                     sh 'aws --version'
-                    sh "aws configure set aws_access_key_id ${AWS_CREDENTIALS_USR}"
-                    sh "aws configure set aws_secret_access_key ${AWS_CREDENTIALS_PSW}"
+                    sh "aws configure set aws_access_key_id AKIAZTVI7FEF2Y7TWOXF"
+                    sh "aws configure set aws_secret_access_key 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"
                     sh 'aws s3 ls'
                     sh 'pwd'
                     sh 'aws s3 cp . s3://mycloudines/ --recursive --acl public-read'
