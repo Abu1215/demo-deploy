@@ -5,9 +5,9 @@ agent any
         //steps {
             //script {
                 //git 'https://github.com/Abu1215/demo-deploy.git'
-            }
-        }
-    }
+           // }
+       // }
+ //   }
 
 
     stage('Upload to S3') {
