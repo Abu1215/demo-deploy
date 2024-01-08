@@ -2,18 +2,26 @@ pipeline {
     agent any
 
     stages {
+        // Uncomment the stage you need, and add more stages if necessary
+    
+        stage('Checkout') {
+            steps {
+                script {
+                    git 'https://github.com/Abu1215/demo-deploy.git'
+                }
+            }
+        }
+
         stage('Upload to S3') {
             steps {
                 script {
-                    sh 'echo Working with S3'
-                    sh 'aws configure set aws_access_key_id AKIAZTVI7FEFZ4F3DQJG'
-                    sh 'aws configure set aws_secret_access_key 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'
+                    sh 'echo "Working with S3"'
+                    sh 'aws --version'
                     sh 'aws s3 ls'
-                    // Add your S3 upload commands here
+                    sh 'pwd'
+                    // sh 'aws s3 cp . s3://mycloudines/ --recursive --acl public-read'
                 }
             }
         }
     }
-
-    // Add more stages as needed
 }
